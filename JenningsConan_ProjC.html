@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Conan Jennings Project C
+      cej379 -->
+<head>
+  <meta charset="utf-8" />
+  <title>Lightshow</title>
+</head>
+
+<body style="margin:0" onload="main()" onresize="winResize(u_ViewMatrix, viewMatrix, u_ModelMatrix, modelMatrix, u_ProjMatrix, u_NormalMatrix, normalMatrix)">
+  <canvas id="webgl" width="500" height="500">
+    Please use a browser that supports "canvas"
+  </canvas>
+  <p>
+    Arrow keys control camera movement.
+    WASD keys control camera viewpoint.
+    Shift raises viewpoint and ctrl lowers it.
+  </p>
+  <p>
+    Swaps shading between Phong and BlinnPhong shadings
+    <button type="button" onclick="switchLighting(gl)">Switch Shading</button>
+  </p>
+  <p>
+    Adjustable Light:
+    <button type="button" onclick="onOff()"> On/Off </button>
+    <button type="button" onclick="plusX()"> X+ </button>
+    <button type="button" onclick="subX()"> X- </button>
+    <button type="button" onclick="plusY()"> Y+ </button>
+    <button type="button" onclick="subY()"> Y- </button>
+    <button type="button" onclick="plusZ()"> Z+ </button>
+    <button type="button" onclick="subZ()"> Z- </button>
+    Ambient lighting controls:
+    <button type="button" onclick="plusAmbiR()"> R+ </button>
+    <button type="button" onclick="subAmbiR()"> R- </button>
+    <button type="button" onclick="plusAmbiG()"> G+ </button>
+    <button type="button" onclick="subAmbiG()"> G- </button>
+    <button type="button" onclick="plusAmbiB()"> B+ </button>
+    <button type="button" onclick="subAmbiB()"> B- </button>
+  </p>
+  <p>
+    Diffuse lighting controls:
+    <button type="button" onclick="plusDiffR()"> R+ </button>
+    <button type="button" onclick="subDiffR()"> R- </button>
+    <button type="button" onclick="plusDiffG()"> G+ </button>
+    <button type="button" onclick="subDiffG()"> G- </button>
+    <button type="button" onclick="plusDiffB()"> B+ </button>
+    <button type="button" onclick="subDiffB()"> B- </button>
+    Specular lighting controls:
+    <button type="button" onclick="plusSpecR()"> R+ </button>
+    <button type="button" onclick="subSpecR()"> R- </button>
+    <button type="button" onclick="plusSpecG()"> G+ </button>
+    <button type="button" onclick="subSpecG()"> G- </button>
+    <button type="button" onclick="plusSpecB()"> B+ </button>
+    <button type="button" onclick="subSpecB()"> B- </button>
+  </p>
+  <p>
+    <a href="index.html">Return to projects</a>
+  </p>
+  <script src="lib/materials_Ayerdi.js"></script>
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix-mod.js"></script>
+  <script src="JenningsConan_ProjC.js"></script>
+</body>
+
+</html>
